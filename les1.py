@@ -9,7 +9,7 @@ number= 11
 for i in range(2, number + 1, 2):
     print(i)
 
-#With Wile loops.
+#With Wile loops/
 i = 2
 while i <= number:
     print(i)
