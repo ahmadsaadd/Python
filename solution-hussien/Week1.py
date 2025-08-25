@@ -231,24 +231,43 @@
 # problem 4
 
 # عدد الطلاب
-n = int(input())
+# n = int(input())
 
 # القاموس لتخزين الدرجات
-student_marks = {}
+# student_marks = {}
 
-# قراءة بيانات الطلاب
-for _ in range(n):
-    data = input("Enter Info Student : ").split()
-    name = data[0]
-    scores = list(map(float, data[1:]))
-    student_marks[name] = scores
+# # قراءة بيانات الطلاب
+# for _ in range(n):
+#     data = input("Enter Info Student : ").split()
+#     name = data[0]
+#     scores = list(map(float, data[1:]))
+#     student_marks[name] = scores
 
-# اسم الطالب المطلوب حساب معدله
-query_name = input("Enter Name Student : ")
+# # اسم الطالب المطلوب حساب معدله
+# query_name = input("Enter Name Student : ")
 
-# حساب المتوسط
-marks = student_marks[query_name]
-average = sum(marks) / len(marks)
+# # حساب المتوسط
+# marks = student_marks[query_name]
+# average = sum(marks) / len(marks)
 
-# طباعة النتيجة بدقة عشريتين
-print(f"{average:.2f}")
+# # طباعة النتيجة بدقة عشريتين
+# print(f"{average:.2f}")
+
+
+def calculator(a ,b):
+    num1 = float(input("أدخل الرقم الأول: "))
+    op = input("أدخل العملية (+ - * /): ")
+    num2 = float(input("أدخل الرقم الثاني: "))
+
+    if op == '+':
+        print(num1 + num2)
+    elif op == '-':
+        print(num1 - num2)
+    elif op == '*':
+        print(num1 * num2)
+    elif op == '/':
+        print(num1 / num2)
+    else:
+        print("عملية غير صحيحة")
+
+calculator()
